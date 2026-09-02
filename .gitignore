@@ -1,0 +1,27 @@
+# SolidWorks
+~$*
+*.SLDPRT.1
+*.SLDASM.1
+*.SLDDRW.1
+*.~vsdx
+*.lck
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# PlatformIO / Arduino build output
+.pio/
+build/
+*.hex
+*.bin
+
+# Python (if any scripting/tools end up in here)
+__pycache__/
+*.pyc
+.venv/
