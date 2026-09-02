@@ -16,7 +16,7 @@ V2 base (waist joint, herringbone 2:1 reduction, swivel bearing) designed and be
 
 ### Specs at a glance
 	
-- OF	3 (waist, shoulder, elbow) + optional 4th-DOF tool head
+- DOF 3 (waist, shoulder, elbow) + optional 4th-DOF tool head
 - Actuators	3× Feetech STS3215 smart servo, daisy-chained
 - Controller	ESP32 + Waveshare Bus Servo Adapter (UART)
 - Power	USB-C PD (20V, primary) or XT60 bench/battery tap (alternate) → 12V servo bus / 5V logic
