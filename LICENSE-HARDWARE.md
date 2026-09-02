@@ -1,4 +1,5 @@
-CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)
+Copyright (c) 2026 C182R
+Licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
 
 SPDX-License-Identifier: CERN-OHL-S-2.0
 
