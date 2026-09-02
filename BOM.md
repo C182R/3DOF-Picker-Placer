@@ -27,7 +27,8 @@ Components finalized so far. Pricing/links intentionally left blank. 3D printed 
 | 1 | SMBJ14A TVS diode | Across servo adapter power terminals |
 | 1 | Mini voltmeter/ammeter module | Diagnostics |
 
-# Input Path B -- XT60 (bench supply, battery)
+### Input Path B -- XT60 (bench supply, battery)
+| Qty | Part | Notes |
 | 1 | XT60 connector | Tapped upstream of fuse, for bench supply |
 | - | External ~20V DC source | Bench supply, or a 5S LiPo + charger (~18.5–21V) if going battery-powered |
 
