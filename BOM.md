@@ -1,6 +1,6 @@
 # Bill of Materials (living doc)
 
-Components finalized so far. Pricing/links intentionally left blank — ping the repo owner or regenerate a fully priced version when ready to shop.
+Components finalized so far. Pricing/links intentionally left blank. 3D printed parts should have files included in /hardware
 
 ## Actuation
 | Qty | Part | Notes |
@@ -30,7 +30,7 @@ Components finalized so far. Pricing/links intentionally left blank — ping the
 | Qty | Part | Notes |
 |---|---|---|
 | — | PETG filament | Primary structural material for FDM prints. PLA will suffice for any low friction surface |
-| — | M3 shoulder screws | (Ideally) Pivot pins. Substitute with PETG rods included in hardware for primitive version |
+| — | M3 shoulder screws | (Ideally) Pivot pins. Substitute with PETG rods included in /hardware for primitive version |
 | — | Herringbone ring gear + pinion (base) | 2:1 reduction, PETG printed |
 | — | Swivel bearing interface (base) | Simple thrust roller bearing + roller/ ball bearing |
 
