@@ -7,4 +7,4 @@ ESP32 control code goes here once it exists. Planned scope:
 - Teach-and-repeat: record demonstrated motions, play them back
 - Eventually: a tool-head interface layer so swapping tool heads (dial gauge, vacuum, 4th-DOF wrist) doesn't require rewriting the core motion code
 
-Nothing's written yet — this is a placeholder so the repo structure is ready when it is.
+Nothing's written yet.. this is a placeholder so the repo structure is ready when it is.
