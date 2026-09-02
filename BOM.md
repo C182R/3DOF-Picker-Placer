@@ -29,10 +29,10 @@ Components finalized so far. Pricing/links intentionally left blank — ping the
 ## Structure
 | Qty | Part | Notes |
 |---|---|---|
-| — | PETG filament | Primary structural material for FDM prints |
-| — | M3 shoulder screws | Pivot pins — do not substitute printed pins |
-| — | Herringbone ring gear + pinion (base) | 2:1 reduction, printed |
-| — | Swivel bearing interface (base) | Simple flat swivel, not crossed-roller |
+| — | PETG filament | Primary structural material for FDM prints. PLA will suffice for any low friction surface |
+| — | M3 shoulder screws | (Ideally) Pivot pins. Substitute with PETG rods included in hardware for primitive version |
+| — | Herringbone ring gear + pinion (base) | 2:1 reduction, PETG printed |
+| — | Swivel bearing interface (base) | Simple thrust roller bearing + roller/ ball bearing |
 
 ## Not yet finalized
 - Vacuum pickup tool head (pump, nozzle, fittings)
