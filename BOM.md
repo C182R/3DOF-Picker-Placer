@@ -1,10 +1,6 @@
 # Bill of Materials (living doc)
 
-<<<<<<< HEAD
-Components finalized so far. Pricing/links intentionally left blank — ping the repo owner or regenerate a fully priced version when ready to shop.
-=======
 Components finalized so far. Pricing/links intentionally left blank. 3D printed parts should have files included in /hardware
->>>>>>> e8f94f404bf51b043a0071adac2276d29347f6e8
 
 ## Actuation
 | Qty | Part | Notes |
