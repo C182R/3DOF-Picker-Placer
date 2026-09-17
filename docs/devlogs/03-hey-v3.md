@@ -1,6 +1,6 @@
 # Devlog #3 — Hey v3
 
-**Date:** August 25, 2026
+**Date:** September 17, 2026
 
 This round was all about getting the design closer to the final product, mainly the robot base and the swivel base assembly. A lot more is actually in the CAD now: screws, heat-set inserts, bushings, bearings, and servos. I also designed the parts that mount the main arm assembly to the swivel deck, and fixed a handful of my own design setbacks and assembly issues that only showed up once real hardware was in the model.
 
