@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2)
 =======
 Copyright (c) 2026 C182R
@@ -17,14 +16,6 @@ maintained by CERN and available at:
 
 https://ohwr.org/cern_ohl_s_v2.txt
 
-<<<<<<< HEAD
-Grab the current official text and drop it into this file before publishing —
-intentionally not pasted here verbatim to avoid shipping a stale/incorrect
-copy of a legal document. If CERN-OHL-S is more copyleft than you want,
-CERN-OHL-P (permissive) or CERN-OHL-W (weakly reciprocal) are the other two
-variants in the same family, or CC-BY-SA 4.0 is a common simpler alternative
-for open hardware projects.
-=======
 CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 
 
