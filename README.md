@@ -2,6 +2,8 @@
 
 *Work-in-progress*
 
+<img width="658" height="534" alt="Image" src="https://github.com/user-attachments/assets/0da90ac6-43dd-4898-b4ed-c6aa5f73d2f8" />
+
 A cheap, easily-assembled, trainable 3-DOF robot arm, designed so anyone could build one from a parts list. Built around a parallelogram linkage topology referenced from Fanuc/KUKA/Panasonic palletizing robots, with topology-optimized structural links for FDM printing.
 
 ## Goals
