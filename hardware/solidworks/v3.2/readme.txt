@@ -1,0 +1,1 @@
+Note: everything after "Pin Connections" folder in the browser tree is not final and may be innacurate. This includes most dimensions of designed parts and any wiring.▫
