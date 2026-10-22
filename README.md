@@ -12,9 +12,10 @@ A cheap, easily-assembled, trainable 3-DOF robot arm, designed so anyone could b
 - Precise, not sprawling; deliberately 3 DOF (waist / shoulder / elbow) instead of chasing 6 DOF. The bet is that a tight, repeatable 3-DOF arm is more useful than a loose 6-DOF one, and it keeps cost and build complexity down
 - Trainable — kinesthetic teach-and-repeat via torque-disabled smart servos, no separate programming step needed to record a motion (in progress)
 - Modular at the tool end: swappable tool heads (dial gauge for precision validation, vacuum head for palletizing/pick-and-place, optional 4th-DOF wrist) instead of building capability into the arm itself
+- Designed to perfom most of the same tasks as 6DOF robot arms, with less hassle and more accessiblilty
 
 ## Status
-V2 base (waist joint, herringbone 2:1 reduction, swivel bearing) designed and being added to the repo. Firmware not yet started. See devlogs for the full history.
+V3.2 base (waist joint, herringbone 2:1 reduction, swivel bearing, and electronics) designed and added to the repo. Firmware started but not tested. See devlogs for the full history.
 
 ### Specs at a glance
 	

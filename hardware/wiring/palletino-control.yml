@@ -1,0 +1,75 @@
+# Palletino wiring, sheet 2 of 2: CONTROL + SERVO BUS (WireViz source)
+# Render:  pip install wireviz  (needs Graphviz)  then  wireviz palletino-control.yml
+# Pin numbers here match firmware/include/config.h.
+
+metadata:
+  title: Palletino - control and servo bus wiring
+
+options:
+  fontname: arial
+  bgcolor: WH
+  color_mode: SHORT
+  mini_bom_mode: false
+
+templates:
+  - &dup
+    type: Dupont
+    gauge: 24 AWG
+    show_wirecount: false
+  - &bus
+    type: servo cable (supplied)
+    show_wirecount: false
+    colors: [BK, RD, WH]
+
+connectors:
+  ESTOP:
+    type: E-stop contact 2 (NC)
+    subtype: sense loop
+    pinlabels: [NC2 a, NC2 b]
+    notes: Closed = run. Pressed or broken wire = stop.
+  ESP32:
+    type: ESP32 DevKit
+    subtype: signal pins
+    pinlabels: [GPIO27 (E-stop), GND, GPIO17 (TX), GPIO16 (RX), GND]
+    notes: GPIO27 uses the internal pull-up
+  ADAPTER:
+    type: Waveshare Bus Servo Adapter (A)
+    subtype: jumper on A
+    pinlabels: [TX, RX, GND, servo GND, servo V+, servo DATA]
+    notes: Waveshare says TX to TX, RX to RX. No servos found? Swap them.
+  S1:
+    type: STS3215
+    subtype: ID 1 waist
+    pinlabels: [in GND, in V+, in DATA, out GND, out V+, out DATA]
+  S2:
+    type: STS3215
+    subtype: ID 2 shoulder
+    pinlabels: [in GND, in V+, in DATA, out GND, out V+, out DATA]
+  S3:
+    type: STS3215
+    subtype: ID 3 elbow
+    pinlabels: [in GND, in V+, in DATA]
+
+cables:
+  W13: {<<: *dup, colors: [OG, BK]}
+  W14: {<<: *dup, colors: [YE, GN, BK]}
+  B1: *bus
+  B2: *bus
+  B3: *bus
+
+connections:
+  - - ESTOP: [1, 2]
+    - W13: [1, 2]
+    - ESP32: [1, 2]
+  - - ESP32: [3, 4, 5]
+    - W14: [1, 2, 3]
+    - ADAPTER: [1, 2, 3]
+  - - ADAPTER: [4, 5, 6]
+    - B1: [1, 2, 3]
+    - S1: [1, 2, 3]
+  - - S1: [4, 5, 6]
+    - B2: [1, 2, 3]
+    - S2: [1, 2, 3]
+  - - S2: [4, 5, 6]
+    - B3: [1, 2, 3]
+    - S3: [1, 2, 3]

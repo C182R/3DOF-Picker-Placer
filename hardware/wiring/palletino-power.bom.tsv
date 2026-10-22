@@ -1,0 +1,20 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 1 x 16 AWG	0	m	W1, W2, W3, W5, W6, W7, W8
+2	Cable, 2 x 16 AWG	0	m	W11, W4
+3	Cable, Dupont, 1 x 24 AWG	0	m	W10
+4	Cable, Dupont, 2 x 24 AWG	0	m	W12, W9
+5	Connector, +12 V splice	1		
+6	Connector, 2200 uF 25 V cap, 2 pins	1		C1
+7	Connector, 3-wire voltmeter, reads servo rail, 3 pins	1		VM
+8	Connector, E-stop contact 1 (NC), cuts servo rail, 2 pins	1		ESTOP
+9	Connector, ESP32 DevKit, power pins, 2 pins	1		ESP32
+10	Connector, GND splice	1		
+11	Connector, Inline fuse, 7.5 A ATC, 2 pins	1		F1
+12	Connector, MP1584 buck, 12 V in, 5.0 V out, 4 pins	1		BUCK2
+13	Connector, P6KE15A TVS, 2 pins	1		D1
+14	Connector, Rocker switch, master power, 2 pins	1		SW1
+15	Connector, USB-C PD trigger, DIP = 20 V, 2 pins	1		PD
+16	Connector, Waveshare Bus Servo Adapter (A), power terminal, 2 pins	1		ADAPTER
+17	Connector, XL4016 buck, 20 V in, 12.0 V out, 4 pins	1		BUCK1
+18	Wire, leads, BK	0	m	L1, L2
+19	Wire, leads, RD	0	m	L1, L2

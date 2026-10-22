@@ -5,5 +5,6 @@ SolidWorks source files and exports are here. The most up-to-date design files o
 ```
 hardware/
 ├── solidworks/        # .SLDPRT, .SLDASM, .SLDDRW source files
-├── step/               # .STEP exports — for anyone opening this in non-SolidWorks CAD, ready to slice
+├── step AP214/               # .STEP exports — for anyone opening this in non-SolidWorks CAD, ready to slice
+├── wiring/               # wiring diagrams in .png, .html, and .yml
 ```

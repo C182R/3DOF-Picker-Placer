@@ -1,0 +1,137 @@
+# Palletino wiring, sheet 1 of 2: POWER (WireViz source)
+# Render:  pip install wireviz  (needs Graphviz)  then  wireviz palletino-power.yml
+
+metadata:
+  title: Palletino - power wiring
+
+options:
+  fontname: arial
+  bgcolor: WH
+  color_mode: SHORT
+  mini_bom_mode: false
+
+templates:
+  - &w16
+    gauge: 16 AWG
+    show_wirecount: false
+  - &dup
+    type: Dupont
+    gauge: 24 AWG
+    show_wirecount: false
+  - &splice
+    style: simple
+    pincount: 1
+
+connectors:
+  PD:
+    type: USB-C PD trigger
+    subtype: DIP = 20 V
+    pinlabels: [VBUS +, GND]
+    notes: 100 W (20 V / 5 A) charger + 5 A cable for full servo load
+  SW1:
+    type: Rocker switch
+    subtype: master power
+    pinlabels: [A, B]
+  BUCK1:
+    type: XL4016 buck
+    subtype: 20 V in, 12.0 V out
+    pinlabels: [IN +, IN -, OUT +, OUT -]
+    notes: Set 12.0 V with no load attached
+  SPL12:
+    <<: *splice
+    type: +12 V splice
+  SPLGND:
+    <<: *splice
+    type: GND splice
+  F1:
+    type: Inline fuse
+    subtype: 7.5 A ATC
+    pinlabels: [in, out]
+  ESTOP:
+    type: E-stop contact 1 (NC)
+    subtype: cuts servo rail
+    pinlabels: [NC1 a, NC1 b]
+  ADAPTER:
+    type: Waveshare Bus Servo Adapter (A)
+    subtype: power terminal
+    pinlabels: [V+, V-]
+    notes: C1 and D1 clamp into these same terminals
+  C1:
+    type: 2200 uF 25 V cap
+    pinlabels: [+, "- (stripe)"]
+  D1:
+    type: P6KE15A TVS
+    pinlabels: ["K (band)", A]
+  VM:
+    type: 3-wire voltmeter
+    subtype: reads servo rail
+    pinlabels: [red supply, black GND, sense]
+  BUCK2:
+    type: MP1584 buck
+    subtype: 12 V in, 5.0 V out
+    pinlabels: [IN +, IN -, OUT +, OUT -]
+    notes: Set 5.0 V first. Upstream of E-stop, so logic stays on.
+  ESP32:
+    type: ESP32 DevKit
+    subtype: power pins
+    pinlabels: [5V, GND]
+
+cables:
+  W1: {<<: *w16, colors: [RD]}
+  W2: {<<: *w16, colors: [RD]}
+  W3: {<<: *w16, colors: [BK]}
+  W4: {<<: *w16, colors: [RD, BK]}
+  W5: {<<: *w16, colors: [RD]}
+  W6: {<<: *w16, colors: [RD]}
+  W7: {<<: *w16, colors: [RD]}
+  W8: {<<: *w16, colors: [BK]}
+  L1: {type: leads, category: bundle, colors: [RD, BK]}
+  L2: {type: leads, category: bundle, colors: [RD, BK]}
+  W9: {<<: *dup, colors: [RD, BK]}
+  W10: {<<: *dup, colors: [YE]}
+  W11: {<<: *w16, colors: [RD, BK]}
+  W12: {<<: *dup, colors: [RD, BK]}
+
+connections:
+  - - PD: [1]
+    - W1: [1]
+    - SW1: [1]
+  - - SW1: [2]
+    - W2: [1]
+    - BUCK1: [1]
+  - - PD: [2]
+    - W3: [1]
+    - BUCK1: [2]
+  - - BUCK1: [3, 4]
+    - W4: [1, 2]
+    - [SPL12, SPLGND]
+  - - SPL12
+    - W5: [1]
+    - F1: [1]
+  - - F1: [2]
+    - W6: [1]
+    - ESTOP: [1]
+  - - ESTOP: [2]
+    - W7: [1]
+    - ADAPTER: [1]
+  - - SPLGND
+    - W8: [1]
+    - ADAPTER: [2]
+  - - ADAPTER: [1, 2]
+    - L1: [1, 2]
+    - C1: [1, 2]
+  - - ADAPTER: [1, 2]
+    - L2: [1, 2]
+    - D1: [1, 2]
+  - - [SPL12, SPLGND]
+    - W9: [1, 2]
+    - VM: [1, 2]
+  - - ADAPTER: [1]
+    - W10: [1]
+    - VM: [3]
+  - - [SPL12, SPLGND]
+    - W11: [1, 2]
+    - BUCK2: [1, 2]
+  - - BUCK2: [3, 4]
+    - W12: [1, 2]
+    - ESP32: [1, 2]
