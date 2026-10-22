@@ -2,7 +2,7 @@
 
 *Work-in-progress*
 
-<img src="docs/images/hero opposite assembly with servos & electronics v3.2.png," alt="Palletino 3-DOF robot arm" width="100%">
+<img src="hero-v3.2.png," alt="Palletino 3-DOF robot arm" width="100%">
 
 A cheap, easily-assembled, trainable 3-DOF robot arm, designed so anyone could build one from a parts list. Built around a parallelogram linkage topology referenced from Fanuc/KUKA/Panasonic palletizing robots, with topology-optimized structural links for FDM printing.
 
