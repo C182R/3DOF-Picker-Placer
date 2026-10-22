@@ -1,0 +1,10 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, Dupont, 2 x 24 AWG	0	m	W13
+2	Cable, Dupont, 3 x 24 AWG	0	m	W14
+3	Cable, servo cable (supplied), 3 wires	0	m	B1, B2, B3
+4	Connector, E-stop contact 2 (NC), sense loop, 2 pins	1		ESTOP
+5	Connector, ESP32 DevKit, signal pins, 5 pins	1		ESP32
+6	Connector, STS3215, ID 1 waist, 6 pins	1		S1
+7	Connector, STS3215, ID 2 shoulder, 6 pins	1		S2
+8	Connector, STS3215, ID 3 elbow, 3 pins	1		S3
+9	Connector, Waveshare Bus Servo Adapter (A), jumper on A, 6 pins	1		ADAPTER
