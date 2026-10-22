@@ -6,7 +6,7 @@ Power,Seloky USB-C PD Trigger Board,"PD/QC decoy, DIP-selectable 5-20V",4 pcs/pa
 Power,HiLetgo XL4016 Buck Converter,4-40V to 1.25-36V 8A 200W,2 pcs/pack,1,$10.99,$10.99,20V->12V servo rail. Set output to 12.0V BEFORE connecting any load,
 Power,EBOOT MP1584EN Buck Converter,24V to 12/9/5/3V adjustable,6 pcs/pack,1,$12.55,$12.55,12V->5V ESP32 rail. Taps rail UPSTREAM of E-stop so logic survives a stop,
 Power,Rubycon Electrolytic Capacitor,2200uF 25V 12.5x25mm low-ESR,multi-pack,1,$6.99,$6.99,Across servo adapter power terminals. Stripe to ground,
-Protection,Chanzon SMBJ15A TVS Diodes,600W 15V unidirectional,50 pcs/pack,1,$5.99,$5.99,Across servo adapter power terminals. Banded end to +12V,
+Protection,Chanzon P6KE15A TVS Diodes,600W 15V unidirectional,50 pcs/pack,1,$5.99,$5.99,Across servo adapter power terminals. Banded end to +12V,
 Protection,Automotive Blade Fuse Assortment Kit,5-30A ATC/ATO,140 pcs/pack,1,$9.97,$9.97,"Start with 7.5A, step to 10A only if nuisance blows",
 Protection,10AWG Inline Fuse Holder,40A ATC blade,4 pcs/pack,1,$9.99,$9.99,7.5A fuse on servo rail. Oversized for 16AWG - watch the crimp,
 Safety,TWTADE 22mm E-Stop Mushroom Button,2NC 10A 600V,1 pc,1,$14.99,$14.99,"1 contact breaks servo rail, 1 contact to ESP32 GPIO as sense",
