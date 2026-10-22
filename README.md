@@ -27,5 +27,7 @@ V3.2 base (waist joint, herringbone 2:1 reduction, swivel bearing, and electroni
 - Base reduction	2:1 herringbone gear, waist joint
 
 ## Wiring
-
-![Wiring diagram](hardware/wiring/palletino-wiring-overview.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="hardware/wiring/palletino-wiring-overview-dark.svg">
+  <img alt="Wiring diagram" src="hardware/wiring/palletino-wiring-overview-light.svg">
+</picture>
