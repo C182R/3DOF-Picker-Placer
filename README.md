@@ -2,7 +2,7 @@
 
 *Work-in-progress*
 
-<img width="658" height="534" alt="Image" src="https://github.com/user-attachments/assets/0da90ac6-43dd-4898-b4ed-c6aa5f73d2f8" />
+<img src="docs/images/hero-v3.2.png" alt="Palletino 3-DOF robot arm" width="100%">
 
 A cheap, easily-assembled, trainable 3-DOF robot arm, designed so anyone could build one from a parts list. Built around a parallelogram linkage topology referenced from Fanuc/KUKA/Panasonic palletizing robots, with topology-optimized structural links for FDM printing.
 
@@ -25,3 +25,9 @@ V3.2 base (waist joint, herringbone 2:1 reduction, swivel bearing, and electroni
 - Power	USB-C PD (20V, primary) or XT60 bench/battery tap (alternate) → 12V servo bus / 5V logic
 - Structure	FDM PETG (V1/V2), aluminum machining planned for later versions
 - Base reduction	2:1 herringbone gear, waist joint
+
+## Wiring
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="hardware/wiring/palletino-wiring-overview-dark.svg">
+  <img alt="Wiring diagram" src="hardware/wiring/palletino-wiring-overview-light.svg">
+</picture>
