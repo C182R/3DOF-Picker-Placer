@@ -25,3 +25,7 @@ V3.2 base (waist joint, herringbone 2:1 reduction, swivel bearing, and electroni
 - Power	USB-C PD (20V, primary) or XT60 bench/battery tap (alternate) → 12V servo bus / 5V logic
 - Structure	FDM PETG (V1/V2), aluminum machining planned for later versions
 - Base reduction	2:1 herringbone gear, waist joint
+
+## Wiring
+
+![Wiring diagram](hardware/wiring/palletino-wiring-overview.png)
