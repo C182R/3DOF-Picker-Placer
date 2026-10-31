@@ -4,9 +4,9 @@ Design files for the current version (V3.2). Older versions (V1 to V3.1) are kep
 
 ```
 hardware/
-├── cad/      # SolidWorks source. Top assembly: palletino.SLDASM
+├── solidworks-cad/  # SolidWorks source. Top assembly: palletino.SLDASM
 ├── step/     # STEP AP214 exports for non-SolidWorks CAD. Top assembly: palletino.STEP
-├── print/    # sliced print plates (.gcode.3mf)
+├── gcode/    # sliced print plates (.gcode.3mf)
 └── wiring/   # wiring diagrams (.yml source, .svg / .png renders)
 ```
 
